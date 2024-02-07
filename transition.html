@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: peachpuff;
+            border: 2px solid tomato;
+            /* transition: width 5s linear 2s, background-color 5s ease-in 2s ; */
+            /* width 5s mane 5s time dhore width borabor joto khani jowar kotha
+            totokahni jabe,and liner 2s mane koto khon por ata kaj korbe,here after
+            2s then will be it work */
+            /* background color here mean koto somay por proper color ta paba */
+            transition: transform 3s;
+        }
+        .box:hover{
+            /* width: 400px;
+            background-color: aqua;
+            font-size: 50px; */
+            transform: rotate(45deg) scale(1.5);
+            /* scal mane kto khani boro soto hobe,ata percentage a hisab */
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Transform:change the shape .this is css 
+            style property name
+        </li>
+        <li>translate: it is the vale of the transform 
+            style rule.This means you move either x, or y or both
+            axis
+        </li>
+        <li>transition:How long it will take to do the change
+            of the shape or color.
+        </li>
+    </ul>
+    <div class="box">box-1</div>
+    <div class="box">box-2</div>
+    <div class="box">box-3</div>
+</body>
+</html>
